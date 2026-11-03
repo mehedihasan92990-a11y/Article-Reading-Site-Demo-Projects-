@@ -1,0 +1,1957 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Obsidian Pro — A premium destination for thoughtful reading, ideas, stories and knowledge.">
+    <meta name="theme-color" content="#101010">
+
+    <title>Obsidian Pro — Read Beyond Ordinary</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ==========================================
+         WEBSITE LOADER
+    =========================================== -->
+
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-logo">O.</div>
+            <div class="loader-line"></div>
+            <p>Preparing your reading experience</p>
+        </div>
+    </div>
+
+
+    <!-- ==========================================
+         ANNOUNCEMENT BAR
+    =========================================== -->
+
+    <div class="announcement-bar">
+        <div class="announcement-content">
+            <span class="announcement-label">NEW</span>
+            <p>Discover a better way to read, think and grow.</p>
+            <a href="#membership">Explore Membership <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <button class="announcement-close" aria-label="Close announcement">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+
+    <!-- ==========================================
+         HEADER
+    =========================================== -->
+
+    <header class="main-header" id="mainHeader">
+
+        <div class="header-container">
+
+            <!-- Logo -->
+
+            <a href="#" class="brand-logo" aria-label="Obsidian Pro Home">
+                <span class="brand-symbol">O.</span>
+                <span class="brand-name">OBSIDIAN<span>PRO</span></span>
+            </a>
+
+
+            <!-- Desktop Navigation -->
+
+            <nav class="desktop-navigation" aria-label="Main navigation">
+
+                <a href="#home" class="nav-link active">Home</a>
+
+                <a href="#discover" class="nav-link">Discover</a>
+
+                <a href="#featured" class="nav-link">Featured</a>
+
+                <a href="#categories" class="nav-link">Categories</a>
+
+                <a href="#authors" class="nav-link">Authors</a>
+
+            </nav>
+
+
+            <!-- Header Actions -->
+
+            <div class="header-actions">
+
+                <button class="icon-button search-open" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+                <button class="icon-button theme-toggle" aria-label="Toggle theme">
+                    <i class="fa-regular fa-moon"></i>
+                </button>
+
+                <a href="#login" class="login-link">Sign in</a>
+
+                <a href="#membership" class="header-cta">
+                    Get Premium
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+
+                <button class="mobile-menu-toggle" aria-label="Open menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Mobile Navigation -->
+
+        <nav class="mobile-navigation" id="mobileNavigation">
+
+            <a href="#home">Home</a>
+            <a href="#discover">Discover</a>
+            <a href="#featured">Featured</a>
+            <a href="#categories">Categories</a>
+            <a href="#authors">Authors</a>
+            <a href="#membership">Membership</a>
+            <a href="#login">Sign in</a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ==========================================
+         SEARCH OVERLAY
+    =========================================== -->
+
+    <section class="search-overlay" id="searchOverlay">
+
+        <div class="search-overlay-container">
+
+            <div class="search-top">
+
+                <span class="search-label">SEARCH OBSIDIAN</span>
+
+                <button class="search-close" aria-label="Close search">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+            </div>
+
+
+            <div class="search-input-wrapper">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="search"
+                    id="globalSearch"
+                    placeholder="Search articles, authors, topics..."
+                    autocomplete="off"
+                >
+
+                <kbd>ESC</kbd>
+
+            </div>
+
+
+            <div class="search-suggestions">
+
+                <p class="suggestion-heading">POPULAR SEARCHES</p>
+
+                <div class="suggestion-tags">
+                    <button>Technology</button>
+                    <button>Psychology</button>
+                    <button>Business</button>
+                    <button>Productivity</button>
+                    <button>Philosophy</button>
+                </div>
+
+            </div>
+
+
+            <div class="search-results" id="searchResults">
+                <!-- Dynamic search results -->
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         MAIN CONTENT
+    =========================================== -->
+
+    <main id="mainContent">
+
+
+        <!-- ======================================
+             HERO SECTION
+        ======================================= -->
+
+        <section class="hero-section" id="home">
+
+            <div class="hero-background"></div>
+
+            <div class="hero-container">
+
+                <div class="hero-left">
+
+                    <div class="hero-eyebrow">
+                        <span class="eyebrow-line"></span>
+                        <span>THE ART OF DEEP READING</span>
+                    </div>
+
+
+                    <h1 class="hero-title">
+                        Ideas that
+                        <span class="title-italic">change</span>
+                        the way you
+                        <span class="title-highlight">think.</span>
+                    </h1>
+
+
+                    <p class="hero-description">
+                        A thoughtfully curated collection of ideas,
+                        stories and perspectives for people who
+                        never stop questioning the world.
+                    </p>
+
+
+                    <div class="hero-actions">
+
+                        <a href="#discover" class="primary-button">
+                            Start Exploring
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="#featured" class="secondary-button">
+                            <span class="play-icon">
+                                <i class="fa-solid fa-play"></i>
+                            </span>
+                            Explore Stories
+                        </a>
+
+                    </div>
+
+
+                    <div class="hero-statistics">
+
+                        <div class="hero-stat">
+                            <h3>2,400<span>+</span></h3>
+                            <p>Curated Articles</p>
+                        </div>
+
+                        <div class="stat-divider"></div>
+
+                        <div class="hero-stat">
+                            <h3>180<span>+</span></h3>
+                            <p>Expert Writers</p>
+                        </div>
+
+                        <div class="stat-divider"></div>
+
+                        <div class="hero-stat">
+                            <h3>35<span>K</span></h3>
+                            <p>Readers</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-right">
+
+                    <div class="hero-image-wrapper">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=1000"
+                            alt="Beautiful library filled with books"
+                            class="hero-image"
+                        >
+
+                        <div class="hero-image-overlay"></div>
+
+
+                        <div class="hero-floating-card">
+
+                            <div class="floating-card-top">
+                                <span class="featured-indicator"></span>
+                                <span>EDITOR'S PICK</span>
+                            </div>
+
+                            <h3>The Power of Knowing Less</h3>
+
+                            <p>
+                                Why understanding deeply matters
+                                more than knowing everything.
+                            </p>
+
+                            <div class="floating-card-bottom">
+                                <span>12 min read</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="hero-decoration decoration-one"></div>
+                    <div class="hero-decoration decoration-two"></div>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-bottom-label">
+                <span>SCROLL TO DISCOVER</span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             TRUSTED BY SECTION
+        ======================================= -->
+
+        <section class="trusted-section">
+
+            <div class="trusted-container">
+
+                <p>THOUGHTS WORTH SHARING</p>
+
+                <div class="trusted-logos">
+
+                    <span>THE JOURNAL</span>
+                    <span>THINKERS</span>
+                    <span>MODERN MIND</span>
+                    <span>THE DAILY EDIT</span>
+                    <span>INSIGHTFUL</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             DISCOVER SECTION
+        ======================================= -->
+
+        <section class="discover-section section-padding" id="discover">
+
+            <div class="section-container">
+
+
+                <div class="section-heading">
+
+                    <div class="section-heading-left">
+
+                        <span class="section-eyebrow">EXPLORE OUR LIBRARY</span>
+
+                        <h2>
+                            Discover something
+                            <span class="heading-italic">meaningful.</span>
+                        </h2>
+
+                        <p>
+                            Ideas, perspectives and stories selected
+                            to inspire your curiosity.
+                        </p>
+
+                    </div>
+
+
+                    <a href="#all-articles" class="text-link">
+                        View all articles
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+
+                <!-- Article Filters -->
+
+                <div class="article-toolbar">
+
+                    <div class="category-filters" id="categoryFilters">
+
+                        <button class="filter-button active" data-category="all">
+                            All Articles
+                        </button>
+
+                        <button class="filter-button" data-category="technology">
+                            Technology
+                        </button>
+
+                        <button class="filter-button" data-category="business">
+                            Business
+                        </button>
+
+                        <button class="filter-button" data-category="psychology">
+                            Psychology
+                        </button>
+
+                        <button class="filter-button" data-category="philosophy">
+                            Philosophy
+                        </button>
+
+                        <button class="filter-button" data-category="lifestyle">
+                            Lifestyle
+                        </button>
+
+                    </div>
+
+
+                    <div class="article-sort">
+
+                        <label for="articleSort">Sort:</label>
+
+                        <select id="articleSort">
+                            <option value="latest">Latest</option>
+                            <option value="popular">Most Popular</option>
+                            <option value="oldest">Oldest</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Article Grid -->
+
+                <div class="article-grid" id="articleGrid">
+
+
+                    <!-- Article 01 -->
+
+                    <article class="article-card" data-category="technology">
+
+                        <div class="article-image-container">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=900"
+                                alt="Artificial intelligence technology"
+                                loading="lazy"
+                            >
+
+                            <span class="article-category">TECHNOLOGY</span>
+
+                            <button class="bookmark-button" aria-label="Bookmark article">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
+
+                        </div>
+
+
+                        <div class="article-content">
+
+                            <div class="article-meta">
+                                <span>OCTOBER 28, 2026</span>
+                                <span class="meta-dot"></span>
+                                <span>8 MIN READ</span>
+                            </div>
+
+                            <h3>
+                                <a href="#reader">
+                                    The Future of Intelligence:
+                                    Beyond Artificial Minds
+                                </a>
+                            </h3>
+
+                            <p>
+                                Exploring how intelligent systems
+                                are changing the boundaries of
+                                human knowledge and creativity.
+                            </p>
+
+
+                            <div class="article-author">
+
+                                <div class="author-avatar">JD</div>
+
+                                <div class="author-information">
+                                    <strong>James Davidson</strong>
+                                    <span>Technology Editor</span>
+                                </div>
+
+                                <span class="article-number">01</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Article 02 -->
+
+                    <article class="article-card" data-category="business">
+
+                        <div class="article-image-container">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900"
+                                alt="Business analytics dashboard"
+                                loading="lazy"
+                            >
+
+                            <span class="article-category">BUSINESS</span>
+
+                            <button class="bookmark-button" aria-label="Bookmark article">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
+
+                        </div>
+
+
+                        <div class="article-content">
+
+                            <div class="article-meta">
+                                <span>OCTOBER 25, 2026</span>
+                                <span class="meta-dot"></span>
+                                <span>12 MIN READ</span>
+                            </div>
+
+                            <h3>
+                                <a href="#reader">
+                                    Building Wealth Through
+                                    Long-Term Thinking
+                                </a>
+                            </h3>
+
+                            <p>
+                                Understanding the principles
+                                behind sustainable wealth,
+                                ownership and financial freedom.
+                            </p>
+
+
+                            <div class="article-author">
+
+                                <div class="author-avatar avatar-gold">MK</div>
+
+                                <div class="author-information">
+                                    <strong>Michael Knight</strong>
+                                    <span>Business Strategist</span>
+                                </div>
+
+                                <span class="article-number">02</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Article 03 -->
+
+                    <article class="article-card" data-category="psychology">
+
+                        <div class="article-image-container">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900"
+                                alt="Peaceful mountain landscape"
+                                loading="lazy"
+                            >
+
+                            <span class="article-category">PSYCHOLOGY</span>
+
+                            <button class="bookmark-button" aria-label="Bookmark article">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
+
+                        </div>
+
+
+                        <div class="article-content">
+
+                            <div class="article-meta">
+                                <span>OCTOBER 22, 2026</span>
+                                <span class="meta-dot"></span>
+                                <span>10 MIN READ</span>
+                            </div>
+
+                            <h3>
+                                <a href="#reader">
+                                    Understanding the Architecture
+                                    of Human Thinking
+                                </a>
+                            </h3>
+
+                            <p>
+                                Discover how our thoughts,
+                                experiences and environment
+                                shape the way we see reality.
+                            </p>
+
+
+                            <div class="article-author">
+
+                                <div class="author-avatar avatar-blue">SL</div>
+
+                                <div class="author-information">
+                                    <strong>Sarah Lewis</strong>
+                                    <span>Psychology Writer</span>
+                                </div>
+
+                                <span class="article-number">03</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Article 04 -->
+
+                    <article class="article-card" data-category="philosophy">
+
+                        <div class="article-image-container">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=900"
+                                alt="Sunrise over a beautiful landscape"
+                                loading="lazy"
+                            >
+
+                            <span class="article-category">PHILOSOPHY</span>
+
+                            <button class="bookmark-button" aria-label="Bookmark article">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
+
+                        </div>
+
+
+                        <div class="article-content">
+
+                            <div class="article-meta">
+                                <span>OCTOBER 19, 2026</span>
+                                <span class="meta-dot"></span>
+                                <span>15 MIN READ</span>
+                            </div>
+
+                            <h3>
+                                <a href="#reader">
+                                    The Questions That
+                                    Define Human Existence
+                                </a>
+                            </h3>
+
+                            <p>
+                                A journey through timeless
+                                philosophical questions about
+                                meaning, purpose and existence.
+                            </p>
+
+
+                            <div class="article-author">
+
+                                <div class="author-avatar avatar-purple">AR</div>
+
+                                <div class="author-information">
+                                    <strong>Alexander Reed</strong>
+                                    <span>Philosophy Contributor</span>
+                                </div>
+
+                                <span class="article-number">04</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Article 05 -->
+
+                    <article class="article-card" data-category="lifestyle">
+
+                        <div class="article-image-container">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900"
+                                alt="Minimal modern workspace"
+                                loading="lazy"
+                            >
+
+                            <span class="article-category">LIFESTYLE</span>
+
+                            <button class="bookmark-button" aria-label="Bookmark article">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
+
+                        </div>
+
+
+                        <div class="article-content">
+
+                            <div class="article-meta">
+                                <span>OCTOBER 16, 2026</span>
+                                <span class="meta-dot"></span>
+                                <span>7 MIN READ</span>
+                            </div>
+
+                            <h3>
+                                <a href="#reader">
+                                    The Quiet Power of
+                                    Deep and Focused Work
+                                </a>
+                            </h3>
+
+                            <p>
+                                Why meaningful work requires
+                                attention, patience and the
+                                courage to eliminate distractions.
+                            </p>
+
+
+                            <div class="article-author">
+
+                                <div class="author-avatar avatar-green">EC</div>
+
+                                <div class="author-information">
+                                    <strong>Emma Clarke</strong>
+                                    <span>Productivity Editor</span>
+                                </div>
+
+                                <span class="article-number">05</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Article 06 -->
+
+                    <article class="article-card" data-category="technology">
+
+                        <div class="article-image-container">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=900"
+                                alt="Computer hardware circuit board"
+                                loading="lazy"
+                            >
+
+                            <span class="article-category">TECHNOLOGY</span>
+
+                            <button class="bookmark-button" aria-label="Bookmark article">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
+
+                        </div>
+
+
+                        <div class="article-content">
+
+                            <div class="article-meta">
+                                <span>OCTOBER 12, 2026</span>
+                                <span class="meta-dot"></span>
+                                <span>11 MIN READ</span>
+                            </div>
+
+                            <h3>
+                                <a href="#reader">
+                                    How Computing Is
+                                    Reshaping Our World
+                                </a>
+                            </h3>
+
+                            <p>
+                                From personal computers to
+                                advanced systems, explore
+                                the evolution of modern computing.
+                            </p>
+
+
+                            <div class="article-author">
+
+                                <div class="author-avatar avatar-orange">DW</div>
+
+                                <div class="author-information">
+                                    <strong>Daniel Wilson</strong>
+                                    <span>Science Contributor</span>
+                                </div>
+
+                                <span class="article-number">06</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+
+                <div class="load-more-wrapper">
+
+                    <button class="outline-button" id="loadMoreButton">
+                        Load More Articles
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             FEATURED ARTICLE
+        ======================================= -->
+
+        <section class="featured-section" id="featured">
+
+            <div class="featured-container">
+
+                <div class="featured-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=1200"
+                        alt="Open book and reading environment"
+                        loading="lazy"
+                    >
+
+                    <div class="featured-image-label">
+                        <i class="fa-solid fa-star"></i>
+                        FEATURED STORY
+                    </div>
+
+                </div>
+
+
+                <div class="featured-content">
+
+                    <span class="section-eyebrow">THE EDITOR'S COLLECTION</span>
+
+                    <h2>
+                        Why the most
+                        successful people
+                        <span class="heading-italic">never stop learning.</span>
+                    </h2>
+
+                    <p>
+                        Knowledge is not simply about collecting
+                        information. It is about developing the
+                        ability to connect ideas, challenge
+                        assumptions and understand the world
+                        from different perspectives.
+                    </p>
+
+
+                    <div class="featured-author">
+
+                        <div class="author-avatar featured-avatar">RH</div>
+
+                        <div>
+                            <strong>Robert Harrison</strong>
+                            <span>Senior Editorial Writer</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="featured-footer">
+
+                        <span>14 MIN READ</span>
+
+                        <a href="#reader" class="featured-read-button">
+                            Read Full Story
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             CATEGORIES
+        ======================================= -->
+
+        <section class="categories-section section-padding" id="categories">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <div class="section-heading-left">
+
+                        <span class="section-eyebrow">EXPLORE YOUR INTERESTS</span>
+
+                        <h2>
+                            Find your
+                            <span class="heading-italic">next curiosity.</span>
+                        </h2>
+
+                        <p>
+                            Explore different worlds of knowledge.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="category-grid">
+
+
+                    <a href="#discover" class="category-card category-large">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=900"
+                            alt="Technology category"
+                            loading="lazy"
+                        >
+
+                        <div class="category-card-overlay"></div>
+
+                        <div class="category-card-content">
+                            <span>01 / EXPLORE</span>
+                            <h3>Technology</h3>
+                            <p>Discover tomorrow, today.</p>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </a>
+
+
+
+                    <a href="#discover" class="category-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900"
+                            alt="Business category"
+                            loading="lazy"
+                        >
+
+                        <div class="category-card-overlay"></div>
+
+                        <div class="category-card-content">
+                            <span>02 / EXPLORE</span>
+                            <h3>Business</h3>
+                            <p>Ideas that create value.</p>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </a>
+
+
+
+                    <a href="#discover" class="category-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900"
+                            alt="Psychology category"
+                            loading="lazy"
+                        >
+
+                        <div class="category-card-overlay"></div>
+
+                        <div class="category-card-content">
+                            <span>03 / EXPLORE</span>
+                            <h3>Psychology</h3>
+                            <p>Understand the human mind.</p>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </a>
+
+
+
+                    <a href="#discover" class="category-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=900"
+                            alt="Philosophy category"
+                            loading="lazy"
+                        >
+
+                        <div class="category-card-overlay"></div>
+
+                        <div class="category-card-content">
+                            <span>04 / EXPLORE</span>
+                            <h3>Philosophy</h3>
+                            <p>Question everything.</p>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </a>
+
+
+
+                    <a href="#discover" class="category-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900"
+                            alt="Productivity category"
+                            loading="lazy"
+                        >
+
+                        <div class="category-card-overlay"></div>
+
+                        <div class="category-card-content">
+                            <span>05 / EXPLORE</span>
+                            <h3>Productivity</h3>
+                            <p>Make every moment count.</p>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             AUTHORS SECTION
+        ======================================= -->
+
+        <section class="authors-section section-padding" id="authors">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <div class="section-heading-left">
+
+                        <span class="section-eyebrow">THE PEOPLE BEHIND THE IDEAS</span>
+
+                        <h2>
+                            Meet our
+                            <span class="heading-italic">thinkers.</span>
+                        </h2>
+
+                        <p>
+                            Perspectives from people who
+                            have something meaningful to say.
+                        </p>
+
+                    </div>
+
+
+                    <a href="#all-authors" class="text-link">
+                        Meet all authors
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+
+                <div class="author-grid">
+
+
+                    <div class="author-card">
+
+                        <div class="author-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500"
+                                alt="James Davidson"
+                                loading="lazy"
+                            >
+                        </div>
+
+                        <div class="author-card-content">
+                            <span>TECHNOLOGY</span>
+                            <h3>James Davidson</h3>
+                            <p>Writer and technology researcher.</p>
+                            <a href="#author-james">View Profile <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="author-card">
+
+                        <div class="author-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500"
+                                alt="Sarah Lewis"
+                                loading="lazy"
+                            >
+                        </div>
+
+                        <div class="author-card-content">
+                            <span>PSYCHOLOGY</span>
+                            <h3>Sarah Lewis</h3>
+                            <p>Psychology writer and researcher.</p>
+                            <a href="#author-sarah">View Profile <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="author-card">
+
+                        <div class="author-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500"
+                                alt="Michael Knight"
+                                loading="lazy"
+                            >
+                        </div>
+
+                        <div class="author-card-content">
+                            <span>BUSINESS</span>
+                            <h3>Michael Knight</h3>
+                            <p>Business strategist and investor.</p>
+                            <a href="#author-michael">View Profile <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="author-card">
+
+                        <div class="author-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500"
+                                alt="Emma Clarke"
+                                loading="lazy"
+                            >
+                        </div>
+
+                        <div class="author-card-content">
+                            <span>LIFESTYLE</span>
+                            <h3>Emma Clarke</h3>
+                            <p>Writer focused on meaningful living.</p>
+                            <a href="#author-emma">View Profile <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             MEMBERSHIP SECTION
+        ======================================= -->
+
+        <section class="membership-section" id="membership">
+
+            <div class="membership-background"></div>
+
+            <div class="membership-container">
+
+                <span class="section-eyebrow">THE OBSIDIAN EXPERIENCE</span>
+
+                <h2>
+                    Go beyond
+                    <span class="heading-italic">the ordinary.</span>
+                </h2>
+
+                <p>
+                    Unlock deeper perspectives, exclusive
+                    collections and a more focused reading
+                    experience.
+                </p>
+
+
+                <div class="membership-features">
+
+                    <div class="membership-feature">
+                        <i class="fa-solid fa-book-open"></i>
+                        <span>Unlimited reading interface</span>
+                    </div>
+
+                    <div class="membership-feature">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span>Personal reading library</span>
+                    </div>
+
+                    <div class="membership-feature">
+                        <i class="fa-solid fa-crown"></i>
+                        <span>Exclusive member collections</span>
+                    </div>
+
+                </div>
+
+
+                <a href="#membership-plans" class="membership-button">
+                    Explore Membership
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+
+                <span class="membership-note">
+                    Designed for curious minds.
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             NEWSLETTER
+        ======================================= -->
+
+        <section class="newsletter-section">
+
+            <div class="newsletter-container">
+
+                <div class="newsletter-left">
+
+                    <span class="section-eyebrow">THE WEEKLY EDIT</span>
+
+                    <h2>
+                        A little more
+                        <span class="heading-italic">thoughtfulness.</span>
+                    </h2>
+
+                    <p>
+                        One carefully curated email.
+                        Fresh ideas and meaningful stories.
+                        Delivered once a week.
+                    </p>
+
+                </div>
+
+
+                <form class="newsletter-form" id="newsletterForm">
+
+                    <label for="newsletterEmail">YOUR EMAIL ADDRESS</label>
+
+                    <div class="newsletter-input-group">
+
+                        <input
+                            type="email"
+                            id="newsletterEmail"
+                            placeholder="you@example.com"
+                            required
+                        >
+
+                        <button type="submit">
+                            Subscribe
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                    <p class="newsletter-disclaimer">
+                        No spam. Just thoughtful reading.
+                    </p>
+
+                    <div class="newsletter-message" id="newsletterMessage"></div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+
+    <footer class="main-footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-top">
+
+                <div class="footer-brand">
+
+                    <a href="#" class="brand-logo">
+                        <span class="brand-symbol">O.</span>
+                        <span class="brand-name">OBSIDIAN<span>PRO</span></span>
+                    </a>
+
+                    <p>
+                        A destination for ideas that
+                        matter and stories worth reading.
+                    </p>
+
+
+                    <div class="social-links">
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="X">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="footer-column">
+
+                    <h4>EXPLORE</h4>
+
+                    <a href="#discover">Discover Articles</a>
+                    <a href="#featured">Featured Stories</a>
+                    <a href="#categories">Categories</a>
+                    <a href="#authors">Our Authors</a>
+
+                </div>
+
+
+
+                <div class="footer-column">
+
+                    <h4>COMPANY</h4>
+
+                    <a href="#about">About Us</a>
+                    <a href="#careers">Careers</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#press">Press</a>
+
+                </div>
+
+
+
+                <div class="footer-column">
+
+                    <h4>RESOURCES</h4>
+
+                    <a href="#help">Help Center</a>
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#membership">Membership</a>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Obsidian Pro. All rights reserved.
+                </p>
+
+                <div class="footer-bottom-links">
+                    <a href="#privacy">Privacy</a>
+                    <a href="#terms">Terms</a>
+                    <a href="#cookies">Cookies</a>
+                </div>
+
+                <a href="#home" class="back-to-top">
+                    BACK TO TOP
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ==========================================
+         ARTICLE READER OVERLAY
+    =========================================== -->
+
+    <section class="reader-overlay" id="reader">
+
+        <div class="reader-topbar">
+
+            <button class="reader-back-button" id="readerBack">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back to articles
+            </button>
+
+
+            <div class="reader-topbar-actions">
+
+                <button class="reader-action" id="readerBookmark" aria-label="Bookmark">
+                    <i class="fa-regular fa-bookmark"></i>
+                </button>
+
+                <button class="reader-action" id="readerShare" aria-label="Share">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </button>
+
+                <button class="reader-action" id="readerSettings" aria-label="Reading settings">
+                    <i class="fa-solid fa-sliders"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="reader-progress-track">
+            <div class="reader-progress-bar" id="readerProgress"></div>
+        </div>
+
+
+
+        <div class="reader-layout">
+
+            <aside class="reader-sidebar">
+
+                <div class="reader-sidebar-section">
+
+                    <span>YOUR READING</span>
+
+                    <a href="#reader">
+                        <i class="fa-solid fa-book-open"></i>
+                        Reading Now
+                    </a>
+
+                    <a href="#bookmarks">
+                        <i class="fa-regular fa-bookmark"></i>
+                        Bookmarks
+                    </a>
+
+                    <a href="#history">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        Reading History
+                    </a>
+
+                </div>
+
+
+                <div class="reader-sidebar-section">
+
+                    <span>ARTICLE CONTENTS</span>
+
+                    <nav class="article-toc" id="articleTOC">
+                        <!-- Generated table of contents -->
+                    </nav>
+
+                </div>
+
+            </aside>
+
+
+
+            <article class="reader-article">
+
+                <div class="reader-article-header">
+
+                    <span class="reader-category" id="readerCategory">
+                        TECHNOLOGY
+                    </span>
+
+                    <h1 id="readerTitle">
+                        The Future of Intelligence:
+                        Beyond Artificial Minds
+                    </h1>
+
+                    <p class="reader-subtitle" id="readerSubtitle">
+                        Exploring the relationship between
+                        human creativity and intelligent machines.
+                    </p>
+
+
+                    <div class="reader-author-meta">
+
+                        <div class="author-avatar">JD</div>
+
+                        <div>
+                            <strong id="readerAuthor">James Davidson</strong>
+                            <span id="readerDate">October 28, 2026 · 8 min read</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="reader-cover-image">
+
+                    <img
+                        id="readerCover"
+                        src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200"
+                        alt="Article cover"
+                    >
+
+                </div>
+
+
+
+                <div class="reader-body" id="readerBody">
+
+                    <p class="reader-lead">
+                        Every major technological transformation
+                        begins with a question. What if the way
+                        we understand the world could be different?
+                    </p>
+
+
+                    <h2 id="reader-section-one">The Beginning of a New Era</h2>
+
+                    <p>
+                        Throughout history, human beings have
+                        developed tools to extend their abilities.
+                        From the invention of writing to the
+                        development of computers, every innovation
+                        has changed the way we communicate,
+                        learn and understand our surroundings.
+                    </p>
+
+
+                    <p>
+                        Artificial intelligence represents
+                        another significant chapter in this
+                        ongoing journey. It challenges us to
+                        reconsider not only what machines can do,
+                        but also what makes human thinking unique.
+                    </p>
+
+
+                    <blockquote>
+                        "The real value of knowledge is not
+                        simply in what we know, but in how
+                        we use it to understand the unknown."
+                    </blockquote>
+
+
+                    <h2 id="reader-section-two">The Human Perspective</h2>
+
+                    <p>
+                        Human intelligence is shaped by
+                        experiences, emotions, curiosity
+                        and the ability to connect seemingly
+                        unrelated ideas.
+                    </p>
+
+
+                    <p>
+                        As technology continues to develop,
+                        the relationship between human judgment
+                        and computational ability becomes
+                        increasingly important.
+                    </p>
+
+
+                    <h2 id="reader-section-three">What Comes Next?</h2>
+
+                    <p>
+                        The future will not be determined
+                        by technology alone. It will also
+                        depend on the questions we choose
+                        to ask and the values we choose
+                        to preserve.
+                    </p>
+
+
+                    <p>
+                        Perhaps the most important skill
+                        of the future will be the ability
+                        to keep learning, adapting and
+                        thinking independently.
+                    </p>
+
+                </div>
+
+
+
+                <div class="reader-end">
+
+                    <div class="reader-end-symbol">O.</div>
+
+                    <h3>End of this story.</h3>
+
+                    <p>
+                        Keep exploring. Keep questioning.
+                    </p>
+
+                </div>
+
+
+
+                <div class="reader-article-footer">
+
+                    <div class="reader-tags">
+                        <span>Technology</span>
+                        <span>Artificial Intelligence</span>
+                        <span>Future</span>
+                    </div>
+
+
+                    <div class="reader-share">
+                        <span>SHARE THIS ARTICLE</span>
+
+                        <button aria-label="Share on Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </button>
+
+                        <button aria-label="Share on X">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </button>
+
+                        <button aria-label="Share on LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <section class="related-articles">
+
+                    <span class="section-eyebrow">CONTINUE EXPLORING</span>
+
+                    <h2>Related stories</h2>
+
+                    <div class="related-grid">
+
+                        <a href="#discover">
+                            <img
+                                src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
+                                alt="Computing"
+                            >
+                            <h3>How Computing Is Reshaping Our World</h3>
+                        </a>
+
+                        <a href="#discover">
+                            <img
+                                src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=500"
+                                alt="AI"
+                            >
+                            <h3>Understanding Artificial Intelligence</h3>
+                        </a>
+
+                    </div>
+
+                </section>
+
+
+            </article>
+
+
+
+            <aside class="reader-right-sidebar">
+
+                <div class="reading-settings-panel">
+
+                    <h3>Reading Settings</h3>
+
+                    <label for="fontSizeControl">Font size</label>
+
+                    <input
+                        type="range"
+                        id="fontSizeControl"
+                        min="14"
+                        max="24"
+                        value="18"
+                    >
+
+
+                    <label for="lineHeightControl">Line spacing</label>
+
+                    <input
+                        type="range"
+                        id="lineHeightControl"
+                        min="1.4"
+                        max="2.2"
+                        step="0.1"
+                        value="1.8"
+                    >
+
+
+                    <button id="readerResetSettings">
+                        Reset settings
+                    </button>
+
+                </div>
+
+
+                <div class="reading-progress-card">
+
+                    <span>YOUR PROGRESS</span>
+
+                    <h3 id="readingPercentage">0%</h3>
+
+                    <div class="mini-progress-track">
+                        <div class="mini-progress-fill" id="miniProgressFill"></div>
+                    </div>
+
+                    <p>Keep going. You're doing great.</p>
+
+                </div>
+
+            </aside>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         LOGIN MODAL
+    =========================================== -->
+
+    <section class="modal-overlay" id="loginModal">
+
+        <div class="modal-container">
+
+            <button class="modal-close" aria-label="Close modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+
+            <div class="modal-logo">O.</div>
+
+            <span class="section-eyebrow">WELCOME BACK</span>
+
+            <h2>Sign in to Obsidian.</h2>
+
+            <p>Continue your reading journey.</p>
+
+
+            <form id="loginForm">
+
+                <label for="loginEmail">Email address</label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="you@example.com"
+                    required
+                >
+
+
+                <label for="loginPassword">Password</label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                    required
+                >
+
+
+                <div class="login-form-options">
+
+                    <label>
+                        <input type="checkbox">
+                        Remember me
+                    </label>
+
+                    <a href="#forgot-password">Forgot password?</a>
+
+                </div>
+
+
+                <button type="submit" class="primary-button modal-submit">
+                    Sign In
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </form>
+
+
+            <p class="modal-switch">
+                Don't have an account?
+                <button id="switchToRegister">Create one</button>
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         REGISTER MODAL
+    =========================================== -->
+
+    <section class="modal-overlay" id="registerModal">
+
+        <div class="modal-container">
+
+            <button class="modal-close" aria-label="Close modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+
+            <div class="modal-logo">O.</div>
+
+            <span class="section-eyebrow">JOIN OUR COMMUNITY</span>
+
+            <h2>Create your account.</h2>
+
+            <p>Make space for better ideas.</p>
+
+
+            <form id="registerForm">
+
+                <label for="registerName">Full name</label>
+
+                <input
+                    type="text"
+                    id="registerName"
+                    placeholder="Your name"
+                    required
+                >
+
+
+                <label for="registerEmail">Email address</label>
+
+                <input
+                    type="email"
+                    id="registerEmail"
+                    placeholder="you@example.com"
+                    required
+                >
+
+
+                <label for="registerPassword">Password</label>
+
+                <input
+                    type="password"
+                    id="registerPassword"
+                    placeholder="Create a password"
+                    minlength="8"
+                    required
+                >
+
+
+                <button type="submit" class="primary-button modal-submit">
+                    Create Account
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </form>
+
+
+            <p class="modal-switch">
+                Already have an account?
+                <button id="switchToLogin">Sign in</button>
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         TOAST NOTIFICATIONS
+    =========================================== -->
+
+    <div class="toast-container" id="toastContainer">
+
+        <div class="toast-message" id="toastMessage">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            <span id="toastText">Action completed.</span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==========================================
+         BACK TO TOP BUTTON
+    =========================================== -->
+
+    <button class="back-to-top-floating" id="backToTop" aria-label="Back to top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+
+    <!-- ==========================================
+         PAGE END
+    =========================================== -->
+
+</body>
+</html>
